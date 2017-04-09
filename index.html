@@ -11,9 +11,16 @@
 			background: #cecece;
 			width: 100%;
 		}
+		body::-webkit-scrollbar{
+			width: 10px;
+		}
+		body::-webkit-scrollbar-thumb{
+			background: #666;
+			border-radius: 10px;
+		}
 		header{
 			background: #444;
-			color: #fff;
+			color:  #fff;
 			padding: 20px;
 			border-bottom: 2px solid #000;
 			text-align: center;
@@ -23,16 +30,40 @@
 		}
 		#container{
 			width: 90%;
+			font-size: 18px;
+			font-family: helvatica;
+			font-style: italic;
+		}
+		button{
+			background: #fff;
+			color: blue;
+			font-size: 20px;
+			width: 100px;
+			height: 40px;
+			outline: none;
+			border: 2px solid blue;
+			transition: all 1s linear;
+		}
+		button:hover{
+			background: blue;
+			color: #fff;
 		}
 	</style>
+	<script type="text/javascript">
+		function riix() {
+			document.getElementById('container').innerText = "Good Bye"
+		}
+	</script>
 </head>
 <body>
 	<header>
 		<h1>Web Developers Site</h1>
 	</header>
 	<div id="container">
-		<p>Welcome to developers' site</p>
+		<h1>Welcome to developers' site</h1>
+		<p>This is new but soon it will be very famous</p>
 	</div>
+	<button onclick="riix()">Click Me</button>
 
 </body>
 </html>
