@@ -9,6 +9,40 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style type="text/css">
+	header{
+			width: 100%;
+			background: #444;
+			color:  #fff;
+			padding: 1px;
+			margin: 0;
+			border-bottom: 2px solid #000;
+			text-align: center;
+			font-size: 30px;
+
+		}
+		nav a:hover,nav a:visited{
+			text-decoration: none;
+		}
+		nav a:active, nav a:hover{
+			color:#55f;
+		}
+		header nav ul{
+			overflow: hidden;
+			background: #fff;
+			width: 100%;
+			margin: 0;
+			padding: 0;
+		}
+		header nav ul li{
+			list-style: none;
+			display: inline-block;
+		}
+		header nav ul li a{
+			padding: 10px;
+			text-decoration: none;
+			color: #000;
+			display: block;
+		}
 		*{
 			margin: 0;
 			padding: 0;
@@ -24,16 +58,6 @@
 			background: #666;
 			border-radius: 10px;
 		}
-		header{
-			background: #444;
-			color:  #fff;
-			padding: 20px;
-			border-bottom: 2px solid #000;
-			text-align: center;
-			font-size: 30px;
-
-			
-		}
 		#container{
 			width: 90%;
 			font-size: 18px;
@@ -48,7 +72,7 @@
 			height: 40px;
 			outline: none;
 			border: 2px solid blue;
-			transition: all 1s linear;
+			transition: all 0.2s linear;
 		}
 		button:hover{
 			background: blue;
@@ -64,6 +88,14 @@
 <body>
 	<header>
 		<h1>Web Developers Site</h1>
+		<nav>
+			<ul>
+				<li><a class="glyphicon glyphicon-home" href="#" title="Home"></a></li>
+				<li><a class="glyphicon glyphicon-cog" href="#" title="Services"></a></li>
+				<li><a class="glyphicon glyphicon-exclamation-sign" href="#" title="About Us"></a></li>
+				<li><a class="glyphicon glyphicon-envelope" href="#" title="Get In Touch"></a></li>
+			</ul>
+		</nav>
 	</header>
 	<div id="container">
 		<h1>Welcome to developers' site</h1>
